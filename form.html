@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Appointment Booking Form</title>
+        <link rel="stylesheet" href="form.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        </script>
+        <script src="forms.js"></script>
+    </head>
+    <body>
+        <div class="booking-box">
+            <img src="user.png" class="avatar">        <!--change this image-->
+            <h3>Booking Window</h3>         <!--Change The name of form-->
+            <form>
+
+                <!--Delete or change some of the inputs feilds...add some extra like address etc-->
+
+                <p>First Name:</p>
+                <input id="fname" type="text" name="fname" placeholder="Enter your first name" required>
+                <p>Last Name:</p>
+                <input id="lname" type="text" name="lname" placeholder="Enter your last name" required>
+               
+                <p>E-mail:</p>
+                <input id="email" type="email" name="" placeholder="Enter password" required>
+
+                <p>Phone Number:</p>
+                <input id="phone" type="text" name="" placeholder="Enter mobile number" required>
+                
+                <p>Gender:</p>
+                <select name="gender" id="gender" value="male">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+                
+                <p>Enter date of appointment:</p>
+            
+                <input type="date" id="start" name="trip-start"
+                    value="2022-09-22"
+                    min="2020-09-22" max="2022-12-31">
+                
+                
+            </form>
+            <input id="submit" type="reset" name="" value="Confirm Appointment">
+
+        </div>
+    </body>
+</html>
